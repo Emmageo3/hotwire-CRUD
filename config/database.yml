@@ -1,0 +1,27 @@
+development:
+  adapter: postgresql
+  encoding: utf8
+  # database: demo_development
+  database: crud_development
+  pool: 20
+  username: deploy
+  password: dabakh
+  host: localhost
+
+test:
+  adapter: postgresql
+  encoding: utf8
+  database: demo_test
+  pool: 20
+  username: deploy
+  password: dabakh
+  host: localhost
+
+production:
+  adapter: postgresql
+  encoding: utf8
+  database: crud_production
+  pool: 20
+  username: deploy
+  password: dabakh
+  host: localhost
