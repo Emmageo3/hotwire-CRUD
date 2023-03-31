@@ -1,0 +1,10 @@
+<div id="<%= dom_id message %>" style="border-bottom: 1px solid #000">
+  <p>
+    <strong>Body:</strong>
+    <%= message.body %>
+  </p>
+  <div style="display: flex">
+    <%= button_to "Edit this message", edit_message_path(message), method: :post %>
+    <%= button_to "Destroy this message", message, method: :delete, style:"margin-left: 1rem" %>
+  </div>
+</div>
